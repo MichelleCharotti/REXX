@@ -1,34 +1,34 @@
 /*REXX*/
 /*DO WHILE. */
-/*Se comprueba que la condici髇 del DO se cumple, es decir, es verdadera,
+/*Se comprueba que la condici贸n del DO se cumple, es decir, es verdadera,
  antes de procesar las instrucciones. Por lo tanto, no va a ejecutar nada de
- dentro del bucle si la condici髇 no se cumple.
+ dentro del bucle si la condici贸n no se cumple.
 
-    DO WHILE condici髇
+    DO WHILE condici贸n
         instrucciones
     END
 */
 clave = "1234"
-DO WHILE clave <> password
-     SAY "Introduce la contrase馻."
+DO WHILE clave <> password                    /* <>  significa distinto*/
+     SAY "Introduce la contrase帽a."
      PULL password
 END
 SAY "Bienvenido."
 PAUSE
 
 
-/*DO WHILE. */
-/*Se comprueba que la condici髇 del DO se cumple, es decir, es verdadera,
-antes de procesar las instrucciones. Por lo tanto, no va a ejecutar nada de
-dentro del bucle si la condici髇 no se cumple.
+/*DO UNTIL. */
+/*Se comprueba que la condici贸n del DO no se cumple, es decir, es falsa,
+despues de procesar las instrucciones una vez. Por lo tanto, va a ejecutar independiente
+de la condicion, y despues comprueba la condicion, si no se cumple ejecuta el bucle.
 
-    DO WHILE condici髇
+    DO UNTIL condici贸n
         instrucciones
     END
 */
 clave = "1234"
-DO WHILE clave <> password
-     SAY "Introcude la contrase馻."
+DO UNTIL clave = password
+     SAY "Introcude la contrase帽a."
      PULL password
 END
 SAY "Bienvenido."
